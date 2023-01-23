@@ -794,6 +794,9 @@ class IQOptionAPI(object):  # pylint: disable=too-many-instance-attributes
                 pass
 
             pass
+    
+    def stop_websocket(self):
+        self.websocket_thread.stop()
 
     # @tokensms.setter
     def setTokenSMS(self, response):
